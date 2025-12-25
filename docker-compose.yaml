@@ -6,7 +6,7 @@ services:
     build: ./baiduapp
 
     image: baiduapp:1.0
-    container_name: baidudisk
+    container_name: baiduapp
 
     volumes:
       - ./downloads:/app/来自：百度网盘
