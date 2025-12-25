@@ -6,7 +6,7 @@ services:
     build: ./baiduapp
 
     image: baiduapp:1.0
-    container_name: baiduapp
+    container_name: baidudisk
 
     volumes:
       - ./downloads:/app/来自：百度网盘
@@ -21,7 +21,7 @@ services:
       ## DEVICE_ID 变量为40位随机字符串，可选范围为 a~f (小写) & 0~9
       ### 示例：40dadef0d361a251169d9cfb850f71c3abbdcec7b4
       # SYS_VERSION 变量保持默认 0.8.36 即可
-      - DEVICE_ID=
+      - DEVICE_ID=40dadef0d7578635269d9cfb850f71c3abbdcec7b4
       - SYS_VERSION=0.8.36
 
     ports:
